@@ -97,5 +97,37 @@ namespace Excellency.Reports.Controllers
             var ReportParth = Server.MapPath("~/Reports/EmployeeInformation.rpt");
             return new CrystalReportToPdf(ReportParth, ds);
         }
+        public ActionResult PrintEmployeePerformance(int id,int period)
+        {
+            DataSet ds = new DataSet();
+            ds.Tables.Add(PerformanceDetails(id, period));
+            ds.Tables.Add(PerformanceHeader(id, period));
+            var ReportParth = Server.MapPath("~/Reports/EmployeePerformance.rpt");
+            return new CrystalReportToPdf(ReportParth, ds);
+        }
+        private DataTable PerformanceHeader(int id,int period)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "[dbo].[spEmployeePerformanceReport]";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.Parameters.AddWithValue("@SeasonId", period);
+            cmd.Parameters.AddWithValue("@QueryType", 0);
+            DataTable dt = SCObjects.ExecGetData(cmd, UserConnectionString);
+            dt.TableName = "Interpretation";
+            return dt;
+        }
+        private DataTable PerformanceDetails(int id, int period)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "[dbo].[spEmployeePerformanceReport]";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.Parameters.AddWithValue("@SeasonId", period);
+            cmd.Parameters.AddWithValue("@QueryType", 1);
+            DataTable dt = SCObjects.ExecGetData(cmd, UserConnectionString);
+            dt.TableName = "Details";
+            return dt;
+        }
     }
 }

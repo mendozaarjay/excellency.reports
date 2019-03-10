@@ -166,6 +166,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsInformation.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\dsPerformance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPerformance.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reports\Behavioral.cs">
       <DependentUpon>Behavioral.rpt</DependentUpon>
@@ -177,6 +182,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EmployeePerformance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeePerformance.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\PerformanceAppraisal.cs">
@@ -222,6 +233,17 @@
     </None>
     <Content Include="Models\dsInformation.xss">
       <DependentUpon>dsInformation.xsd</DependentUpon>
+    </Content>
+    <Content Include="Models\dsPerformance.xsc">
+      <DependentUpon>dsPerformance.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\dsPerformance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPerformance.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Models\dsPerformance.xss">
+      <DependentUpon>dsPerformance.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -274,6 +296,10 @@
     <EmbeddedResource Include="Reports\EmployeeInformation.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>EmployeeInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\EmployeePerformance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmployeePerformance.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\PerformanceAppraisal.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
