@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAppraisal" targetNamespace="http://tempuri.org/dsAppraisal.xsd" xmlns:mstns="http://tempuri.org/dsAppraisal.xsd" xmlns="http://tempuri.org/dsAppraisal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAppraisal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsAppraisal" msprop:Generator_UserDSName="dsAppraisal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HEADER" msprop:Generator_TableClassName="HEADERDataTable" msprop:Generator_TableVarName="tableHEADER" msprop:Generator_TablePropName="HEADER" msprop:Generator_RowDeletingName="HEADERRowDeleting" msprop:Generator_RowChangingName="HEADERRowChanging" msprop:Generator_RowEvHandlerName="HEADERRowChangeEventHandler" msprop:Generator_RowDeletedName="HEADERRowDeleted" msprop:Generator_UserTableName="HEADER" msprop:Generator_RowChangedName="HEADERRowChanged" msprop:Generator_RowEvArgName="HEADERRowChangeEvent" msprop:Generator_RowClassName="HEADERRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Rater" msprop:Generator_ColumnVarNameInTable="columnRater" msprop:Generator_ColumnPropNameInRow="Rater" msprop:Generator_ColumnPropNameInTable="RaterColumn" msprop:Generator_UserColumnName="Rater" type="xs:string" minOccurs="0" />
+              <xs:element name="Ratee" msprop:Generator_ColumnVarNameInTable="columnRatee" msprop:Generator_ColumnPropNameInRow="Ratee" msprop:Generator_ColumnPropNameInTable="RateeColumn" msprop:Generator_UserColumnName="Ratee" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalScore" msprop:Generator_ColumnVarNameInTable="columnTotalScore" msprop:Generator_ColumnPropNameInRow="TotalScore" msprop:Generator_ColumnPropNameInTable="TotalScoreColumn" msprop:Generator_UserColumnName="TotalScore" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" type="xs:string" minOccurs="0" />
+              <xs:element name="EvaluationDate" msprop:Generator_ColumnVarNameInTable="columnEvaluationDate" msprop:Generator_ColumnPropNameInRow="EvaluationDate" msprop:Generator_ColumnPropNameInTable="EvaluationDateColumn" msprop:Generator_UserColumnName="EvaluationDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Behavioral" msprop:Generator_TableClassName="BehavioralDataTable" msprop:Generator_TableVarName="tableBehavioral" msprop:Generator_TablePropName="Behavioral" msprop:Generator_RowDeletingName="BehavioralRowDeleting" msprop:Generator_RowChangingName="BehavioralRowChanging" msprop:Generator_RowEvHandlerName="BehavioralRowChangeEventHandler" msprop:Generator_RowDeletedName="BehavioralRowDeleted" msprop:Generator_UserTableName="Behavioral" msprop:Generator_RowChangedName="BehavioralRowChanged" msprop:Generator_RowEvArgName="BehavioralRowChangeEvent" msprop:Generator_RowClassName="BehavioralRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HeaderId" msprop:Generator_ColumnVarNameInTable="columnHeaderId" msprop:Generator_ColumnPropNameInRow="HeaderId" msprop:Generator_ColumnPropNameInTable="HeaderIdColumn" msprop:Generator_UserColumnName="HeaderId" type="xs:string" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_UserColumnName="Weight" type="xs:string" minOccurs="0" />
+              <xs:element name="KSIDescription" msprop:Generator_ColumnVarNameInTable="columnKSIDescription" msprop:Generator_ColumnPropNameInRow="KSIDescription" msprop:Generator_ColumnPropNameInTable="KSIDescriptionColumn" msprop:Generator_UserColumnName="KSIDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="KSIWeight" msprop:Generator_ColumnVarNameInTable="columnKSIWeight" msprop:Generator_ColumnPropNameInRow="KSIWeight" msprop:Generator_ColumnPropNameInTable="KSIWeightColumn" msprop:Generator_UserColumnName="KSIWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+              <xs:element name="Score" msprop:Generator_ColumnVarNameInTable="columnScore" msprop:Generator_ColumnPropNameInRow="Score" msprop:Generator_ColumnPropNameInTable="ScoreColumn" msprop:Generator_UserColumnName="Score" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KRA" msprop:Generator_TableClassName="KRADataTable" msprop:Generator_TableVarName="tableKRA" msprop:Generator_TablePropName="KRA" msprop:Generator_RowDeletingName="KRARowDeleting" msprop:Generator_RowChangingName="KRARowChanging" msprop:Generator_RowEvHandlerName="KRARowChangeEventHandler" msprop:Generator_RowDeletedName="KRARowDeleted" msprop:Generator_UserTableName="KRA" msprop:Generator_RowChangedName="KRARowChanged" msprop:Generator_RowEvArgName="KRARowChangeEvent" msprop:Generator_RowClassName="KRARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HeaderId" msprop:Generator_ColumnVarNameInTable="columnHeaderId" msprop:Generator_ColumnPropNameInRow="HeaderId" msprop:Generator_ColumnPropNameInTable="HeaderIdColumn" msprop:Generator_UserColumnName="HeaderId" type="xs:string" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_UserColumnName="Weight" type="xs:string" minOccurs="0" />
+              <xs:element name="KSIDescription" msprop:Generator_ColumnVarNameInTable="columnKSIDescription" msprop:Generator_ColumnPropNameInRow="KSIDescription" msprop:Generator_ColumnPropNameInTable="KSIDescriptionColumn" msprop:Generator_UserColumnName="KSIDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="KSIWeight" msprop:Generator_ColumnVarNameInTable="columnKSIWeight" msprop:Generator_ColumnPropNameInRow="KSIWeight" msprop:Generator_ColumnPropNameInTable="KSIWeightColumn" msprop:Generator_UserColumnName="KSIWeight" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+              <xs:element name="Score" msprop:Generator_ColumnVarNameInTable="columnScore" msprop:Generator_ColumnPropNameInRow="Score" msprop:Generator_ColumnPropNameInTable="ScoreColumn" msprop:Generator_UserColumnName="Score" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
