@@ -49,6 +49,7 @@ namespace Excellency.Reports.Controllers
             return dt;
         }
         #endregion
+        #region Behavioral Report
         public ActionResult PrintBehavioral(int id)
         {
             DataSet ds = new DataSet();
@@ -79,6 +80,22 @@ namespace Excellency.Reports.Controllers
             DataTable dt = SCObjects.ExecGetData(cmd, UserConnectionString);
             dt.TableName = "Behavioral";
             return dt;
+        } 
+        #endregion
+        public ActionResult PrintEmployeeInformation(int id)
+        {
+            DataSet ds = new DataSet();
+            ds.DataSetName = "dsInformation";
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "[dbo].[spEmployeeInformationReport]";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.Parameters.AddWithValue("@QueryType", 0);
+            DataTable dt = SCObjects.ExecGetData(cmd, UserConnectionString);
+            dt.TableName = "EmployeeInfo";
+            ds.Tables.Add(dt);
+            var ReportParth = Server.MapPath("~/Reports/EmployeeInformation.rpt");
+            return new CrystalReportToPdf(ReportParth, ds);
         }
     }
 }
