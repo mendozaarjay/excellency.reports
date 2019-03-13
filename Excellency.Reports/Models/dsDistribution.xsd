@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDistribution" targetNamespace="http://tempuri.org/dsDistribution.xsd" xmlns:mstns="http://tempuri.org/dsDistribution.xsd" xmlns="http://tempuri.org/dsDistribution.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDistribution" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDistribution" msprop:Generator_UserDSName="dsDistribution">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Interpretation" msprop:Generator_TableClassName="InterpretationDataTable" msprop:Generator_TableVarName="tableInterpretation" msprop:Generator_TablePropName="Interpretation" msprop:Generator_RowDeletingName="InterpretationRowDeleting" msprop:Generator_RowChangingName="InterpretationRowChanging" msprop:Generator_RowEvHandlerName="InterpretationRowChangeEventHandler" msprop:Generator_RowDeletedName="InterpretationRowDeleted" msprop:Generator_UserTableName="Interpretation" msprop:Generator_RowChangedName="InterpretationRowChanged" msprop:Generator_RowEvArgName="InterpretationRowChangeEvent" msprop:Generator_RowClassName="InterpretationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Score" msprop:Generator_ColumnVarNameInTable="columnScore" msprop:Generator_ColumnPropNameInRow="Score" msprop:Generator_ColumnPropNameInTable="ScoreColumn" msprop:Generator_UserColumnName="Score" type="xs:string" minOccurs="0" />
+              <xs:element name="Interpretation" msprop:Generator_ColumnVarNameInTable="columnInterpretation" msprop:Generator_ColumnPropNameInRow="Interpretation" msprop:Generator_ColumnPropNameInTable="InterpretationColumn" msprop:Generator_UserColumnName="Interpretation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

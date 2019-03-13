@@ -161,6 +161,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsAppraisal.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\dsDistribution.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDistribution.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Models\dsInformation.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -188,6 +193,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeePerformance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\GraphicalDistribution.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GraphicalDistribution.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\PerformanceAppraisal.cs">
@@ -225,6 +236,17 @@
     </Content>
     <Content Include="Models\dsInformation.xsc">
       <DependentUpon>dsInformation.xsd</DependentUpon>
+    </Content>
+    <Content Include="Models\dsDistribution.xsc">
+      <DependentUpon>dsDistribution.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\dsDistribution.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDistribution.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Models\dsDistribution.xss">
+      <DependentUpon>dsDistribution.xsd</DependentUpon>
     </Content>
     <None Include="Models\dsInformation.xsd">
       <SubType>Designer</SubType>
@@ -300,6 +322,10 @@
     <EmbeddedResource Include="Reports\EmployeePerformance.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>EmployeePerformance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GraphicalDistribution.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GraphicalDistribution.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\PerformanceAppraisal.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

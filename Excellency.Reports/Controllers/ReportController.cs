@@ -129,5 +129,20 @@ namespace Excellency.Reports.Controllers
             dt.TableName = "Details";
             return dt;
         }
+
+        public ActionResult PrintGraphicalDistribution(int period)
+        {
+            DataSet ds = new DataSet();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "[dbo].[spGraphicalDestribution]";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@SeasonId", period);
+
+            var dt = SCObjects.ExecGetData(cmd, UserConnectionString);
+            dt.TableName = "Interpretation";
+            ds.Tables.Add(dt);
+            var ReportParth = Server.MapPath("~/Reports/GraphicalDistribution.rpt");
+            return new CrystalReportToPdf(ReportParth, ds);
+        }
     }
 }
